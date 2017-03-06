@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1009446233590",
+    "firebase_url": "https://emax-demov3.firebaseio.com",
+    "project_id": "emax-demov3",
+    "storage_bucket": "emax-demov3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009446233590:android:bf0177430e4313e0",
+        "android_client_info": {
+          "package_name": "emax.demov3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009446233590-odup1odld51i07q3rv7nb0oqm1862ue6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDU7tlm_KDq8oRDkg2iDdgx8bxR170kh4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

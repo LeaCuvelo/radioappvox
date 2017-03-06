@@ -1,0 +1,74 @@
+<resources>
+
+    <!--application name-->
+    <string name="app_name">Radio Demo EMaxv3</string>
+
+    <!--navigation drawer menu name-->
+    <string name="drawer_home">Inicio</string>
+    <string name="drawer_social">Redes Sociales</string>
+    <string name="drawer_rate">Valorar App</string>
+    <string name="drawer_more">Contacto</string>
+    <string name="drawer_about">Sobre La App</string>
+    <string name="drawer_programming">Programacion</string>
+    <string name="drawer_about_us">Quienes Somos?</string>
+    <string name="drawer_exit">Salir!</string>
+    <string name="drawer_empty_title"></string>
+
+    <!--about information-->
+    <string name="app_version">Version 3.0.0</string>
+    <string name="app_email">info@estudiosmax.com.ar</string>
+    <string name="app_copyright">Copyright &#169; 2017 Estudios Max - Servicios Informaticos</string>
+    <string name="share_summary">Compartir Con tus Amigos</string>
+    <string name="rate_summary">Valor Aplicacion y Dejar Comentario</string>
+    <string name="more_summary">Más aplicaciones de desarrollador</string>
+    <string name="title_app_name">Nombre De La Alicacion</string>
+    <string name="title_app_version">Version</string>
+    <string name="title_app_email">E-Mail</string>
+    <string name="title_app_copyright">Copyright</string>
+    <string name="title_app_share">Compartir</string>
+    <string name="title_app_rate">Valorar</string>
+    <string name="title_app_more">Ver Mas</string>
+
+    <!--admob banner and interstitial id-->
+    <string name="admob_banner_id">ca-app-pub-5107556562590198/5609236067</string>
+    <string name="admob_interstitial_id">ca-app-pub-5107556562590198/7085969260</string>
+
+    <!--social network-->
+    <string name="social_tab1">Facebook</string>
+    <string name="social_tab2">Twitter</string>
+    <string name="facebook_url">https://www.facebook.com/est.max</string>
+    <string name="twitter_url">https://twitter.com/estudiosmax</string>
+
+    <!-- play store application link i.e more apps -->
+    <string name="play_more_apps">http://estudiosmax.com/</string>
+
+    <!--share text-->
+    <string name="share">Share</string>
+    <string name="share_text">Me gustaría compartir esto con usted. Aquí puedes descargar esta aplicación de PlayStore</string>
+
+    <!--radio player-->
+    <string name="live_streaming">Estamos en vivo!</string>
+    <string name="connecting">Conectando&#8230;</string>
+    <string name="now_listening">Estas Escuchando :</string>
+
+    <!--notification playing bar-->
+    <string name="notification_title">Transmisión en vivo</string>
+    <string name="notification_subtitle">Radio Demo EMaxv3</string>
+
+    <!--connection-->
+    <string name="alert_network">Por favor, active su conexión a Internet para reproducir la transmisión de radio!</string>
+    <string name="error_retry">Radio Fuera De Linea, Probablemente el servidor actualmente este inactivo!</string>
+    <string name="no_network">Error al conectar a la red de internet!</string>
+    <string name="volume_low">¡Aumente el volumen para escuchar la radio!</string>
+
+    <!--exit dialog-->
+    <string name="message">Que Quieres Hacer?</string>
+    <string name="quit">Salir!</string>
+    <string name="minimize">Minimizar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!--others-->
+    <string name="drawer_open">Menú abierto</string>
+    <string name="drawer_close">Menú cerrado</string>
+
+</resources>
