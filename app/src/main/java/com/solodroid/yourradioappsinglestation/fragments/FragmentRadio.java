@@ -159,6 +159,9 @@ public class FragmentRadio extends Fragment implements OnClickListener, RadioLis
             buttonPlay.setEnabled(true);
             buttonStopPlay.setEnabled(true);
 
+            buttonPlay.setVisibility(View.VISIBLE);
+            buttonStopPlay.setVisibility(View.GONE);
+
             updateMediaInfoFromBackground(null);
         }
     }
