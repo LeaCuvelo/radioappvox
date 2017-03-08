@@ -1,5 +1,7 @@
 package com.solodroid.yourradioappsinglestation.activities;
 
+import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -8,6 +10,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.MediaStore;
 import android.service.notification.StatusBarNotification;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -99,7 +102,6 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,
                 new FragmentHome(), COLLAPSING_TOOLBAR_FRAGMENT_TAG).commit();
 
-
     }
 
     @Override
@@ -176,7 +178,9 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
 
             case R.id.drawer_exit:
                 radioManager.stopRadio();
+                RadioManager.getService().quitService();
                 MainActivity.this.finish();
+
                 return true;
 
         }
@@ -221,7 +225,9 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 radioManager.stopRadio();
+                RadioManager.getService().quitService();
                 MainActivity.this.finish();
+
             }
         });
 

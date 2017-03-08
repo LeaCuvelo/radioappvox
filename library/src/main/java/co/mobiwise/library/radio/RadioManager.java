@@ -217,8 +217,8 @@ public class RadioManager implements IRadioManager {
      */
     @Override
     public void updateNotification(String singerName, String songName, int smallArt, int bigArt) {
-      //  if (mService != null && isEnabled)
-        //    mService.updateNotification(singerName, songName, smallArt, bigArt);
+        if (mService != null && isEnabled)
+            mService.updateNotification(singerName, songName, smallArt, bigArt);
     }
 
     /**
@@ -231,8 +231,8 @@ public class RadioManager implements IRadioManager {
      */
     @Override
     public void updateNotification(String singerName, String songName, int smallArt, Bitmap bigArt) {
-       // if (mService != null && isEnabled)
-         //   mService.updateNotification(singerName, songName, smallArt, bigArt);
+        if (mService != null && isEnabled)
+            mService.updateNotification(singerName, songName, smallArt, bigArt);
     }
 
     @Override

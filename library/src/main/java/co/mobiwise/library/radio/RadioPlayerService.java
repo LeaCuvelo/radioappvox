@@ -613,4 +613,40 @@ public class RadioPlayerService extends Service implements PlayerCallback {
             return RadioPlayerService.this;
         }
     }
+
+    /*
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        mNotificationManager.cancelAll();
+
+        if (!mLock && mRadioState != State.STOPPED) {
+            log("Stop requested.");
+            mLock = true;
+            getPlayer().stop();
+        }
+
+        mLock = true;
+        getPlayer().stop();
+    }
+    */
+
+    public void quitService(){
+        mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        mNotificationManager.cancelAll();
+        if (!mLock ) {
+            log("Stop requested.");
+            mLock = true;
+            getPlayer().stop();
+        }
+        isNotificationEnabled = false;
+        stopForeground(true);
+
+    }
+
+    public void enableNotificationHardcode(){
+        isNotificationEnabled = true;
+    }
+
 }

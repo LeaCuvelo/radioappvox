@@ -266,7 +266,9 @@ public class FragmentRadio extends Fragment implements OnClickListener, RadioLis
 
     @Override
     public void onRadioConnected() {
+        RadioManager.getService().enableNotification(true);
         buttonPlay.performClick();
+
     }
 
     @Override
