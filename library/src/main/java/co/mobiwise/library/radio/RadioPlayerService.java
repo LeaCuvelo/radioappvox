@@ -193,6 +193,9 @@ public class RadioPlayerService extends Service implements PlayerCallback {
          * IDLE, stop player and cancel notification
          */
         if (action.equals(NOTIFICATION_INTENT_CANCEL)) {
+
+
+
             if (isPlaying()) {
                 isClosedFromNotification = true;
                 stop();
