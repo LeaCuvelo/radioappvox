@@ -297,30 +297,15 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
     @Override
     protected void onResume() {
         super.onResume();
-        disableNotificationInPreferences();
+
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        enableNotificationInPreferences();
        // radioManager.enableNotification(true);
     }
 
-    private void enableNotificationInPreferences() {
-        SharedPreferences prefs = getSharedPreferences("NotificationPreferences",Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean("Visible", true);
-        editor.commit();
-    }
-
-
-    private void disableNotificationInPreferences() {
-        SharedPreferences prefs = getSharedPreferences("NotificationPreferences",Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putBoolean("Visible", false);
-        editor.commit();
-    }
 
 
     private void loadAdMobBannerAd() {
