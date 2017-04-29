@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "1009446233590",
-    "firebase_url": "https://emax-demov3.firebaseio.com",
-    "project_id": "emax-demov3",
-    "storage_bucket": "emax-demov3.appspot.com"
+    "project_number": "903073887333",
+    "firebase_url": "https://emaxvoxradio1029.firebaseio.com",
+    "project_id": "emaxvoxradio1029",
+    "storage_bucket": "emaxvoxradio1029.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1009446233590:android:bf0177430e4313e0",
+        "mobilesdk_app_id": "1:903073887333:android:1008a370d8f254e9",
         "android_client_info": {
-          "package_name": "emax.demov3"
+          "package_name": "emax.voxradio1029"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1009446233590-odup1odld51i07q3rv7nb0oqm1862ue6.apps.googleusercontent.com",
+          "client_id": "903073887333-anu8i7dob5mci467gkgoj3gfbhh5fi18.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBDU7tlm_KDq8oRDkg2iDdgx8bxR170kh4"
+          "current_key": "AIzaSyBSPkV5GXcZ0FFSrQtAz2SS5vbchpWZzxM"
         }
       ],
       "services": {

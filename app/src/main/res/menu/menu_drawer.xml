@@ -27,10 +27,6 @@
             android:icon="@drawable/ic_contact"
             android:title="@string/drawer_more" />
 
-        <item
-            android:id="@+id/drawer_about"
-            android:icon="@drawable/ic_drawer_about"
-            android:title="@string/drawer_about" />
 
         <item
             android:id="@+id/drawer_exit"

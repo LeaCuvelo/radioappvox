@@ -2,13 +2,13 @@
 <resources>
 
     <!--app main color-->
-    <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#00796B</color>
-    <color name="colorAccent">#2fc6b8</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
 
     <!--player color-->
-    <color name="metadataBar">#00796B</color>
-    <color name="playBar">#009688</color>
+    <color name="metadataBar">#131313</color>
+    <color name="playBar">#7e000b</color>
 
     <!--social tab color-->
     <color name="tabIndicatorColor">#FFFFFF</color>

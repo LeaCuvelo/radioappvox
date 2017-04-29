@@ -1,15 +1,14 @@
 <resources>
 
     <!--application name-->
-    <string name="app_name">Radio Demo EMaxv3</string>
+    <string name="app_name">Vox Radio 102.9</string>
 
     <!--navigation drawer menu name-->
     <string name="drawer_home">Inicio</string>
     <string name="drawer_social">Redes Sociales</string>
     <string name="drawer_rate">Valorar App</string>
     <string name="drawer_more">Contacto</string>
-    <string name="drawer_about">Sobre La App</string>
-    <string name="drawer_programming">Programacion</string>
+    <string name="drawer_programming">Programación</string>
     <string name="drawer_about_us">Quienes Somos?</string>
     <string name="drawer_exit">Salir!</string>
     <string name="drawer_empty_title"></string>
@@ -36,11 +35,11 @@
     <!--social network-->
     <string name="social_tab1">Facebook</string>
     <string name="social_tab2">Twitter</string>
-    <string name="facebook_url">https://www.facebook.com/est.max</string>
-    <string name="twitter_url">https://twitter.com/estudiosmax</string>
+    <string name="facebook_url">http://estudiosmax.com/app/radiovoxfm/facebook</string>
+    <string name="twitter_url">http://estudiosmax.com/app/radiovoxfm/twitter</string>
 
     <!-- play store application link i.e more apps -->
-    <string name="play_more_apps">http://estudiosmax.com/</string>
+    <string name="play_more_apps">http://estudiosmax.com/app/radiovoxfm/</string>
 
     <!--share text-->
     <string name="share">Share</string>
@@ -53,7 +52,7 @@
 
     <!--notification playing bar-->
     <string name="notification_title">Transmisión en vivo</string>
-    <string name="notification_subtitle">Radio Demo EMaxv3</string>
+    <string name="notification_subtitle">Vox Radio 102.9</string>
 
     <!--connection-->
     <string name="alert_network">Por favor, active su conexión a Internet para reproducir la transmisión de radio!</string>
@@ -70,5 +69,28 @@
     <!--others-->
     <string name="drawer_open">Menú abierto</string>
     <string name="drawer_close">Menú cerrado</string>
+
+    <!-- Sponsors  and Contact Us -->
+    <string name="sponsors_title">Auspiciantes</string>
+    <string name="contact_us_title">Comunicate Con Nuestra Area Comercial:</string>
+    <string name="contact_us_phone_value">TELÉFONO 4250-4000 - 15-3266-2066</string>
+    <string name="contact_us_mail_value">MAIL: ventas@fmradiovox.com</string>
+
+    <string name="contact_us_phone_contact_value">Telefono 4200-6511</string>
+    <string name="contact_us_whatsapp_value">Whatsapp : 11-6400-7047</string>
+    <string name="contact_us_mail_contact">Mail : info@fmradiovox.com</string>
+    <string name="contact_us_send_message_label">ENVIAR MENSAJE:</string>
+    <string name="contact_us_name_label">Nombre</string>
+    <string name="contact_us_email_label">E-mail</string>
+    <string name="contact_us_send_message_text">Mensaje</string>
+    <string name="contact_us_send_text_button">Enviar</string>
+
+
+    <string name="who_we_are_text"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisi sapien, viverra et pellentesque sit amet, ultricies sit amet lorem. Cras laoreet sit amet odio et auctor. Ut quis pharetra justo. Nulla accumsan suscipit pharetra. Nam eget euismod nulla. Cras pretium lectus a massa egestas ullamcorper. Sed a justo ornare, tincidunt metus scelerisque, consectetur justo.
+
+    Nullam enim sapien, porta nec hendrerit vitae, gravida sollicitudin nisi. Suspendisse potenti. Nam auctor risus sit amet purus sollicitudin tincidunt. Aliquam erat volutpat. Sed dignissim mi sed lacus finibus bibendum. Ut sed metus commodo, molestie eros quis, cursus nunc. Integer nec pellentesque lorem, sed tempus est. Ut pharetra aliquam nibh, vel varius ipsum lobortis vitae. Praesent lacinia mattis rutrum. Sed eu cursus tortor, at tempus sapien. Fusce et est commodo, viverra tellus vitae, consectetur tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+    Nam congue diam quis nisi varius, quis faucibus est vestibulum. Mauris vel consequat tortor. Vivamus ac enim scelerisque, blandit lorem id, vestibulum f</string>
+
 
 </resources>

@@ -1,17 +1,11 @@
 package com.solodroid.yourradioappsinglestation.activities;
 
-import android.app.Activity;
-import android.app.ActivityManager;
-import android.app.NotificationManager;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.icu.util.Calendar;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.provider.MediaStore;
-import android.service.notification.StatusBarNotification;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -26,7 +20,6 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -39,7 +32,6 @@ import com.solodroid.yourradioappsinglestation.notification.NotificationHandler;
 import com.solodroid.yourradioappsinglestation.services.NotificationBuilder;
 import com.solodroid.yourradioappsinglestation.utilities.Callscreen;
 
-import butterknife.OnClick;
 import co.mobiwise.library.radio.RadioListener;
 import co.mobiwise.library.radio.RadioManager;
 
@@ -160,20 +152,18 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
                 return true;
 
             case R.id.drawer_more:
-                Callscreen.renderURL(this, getString(R.string.play_more_apps), "More");  //TODO Cambiar URL por la programacion de la radio y el titulo
+                Callscreen.goToContactUsActivity(this);
+
                 return true;
 
-            case R.id.drawer_about:
-                Intent about = new Intent(this, ActivityAbout.class);
-                startActivity(about);
-                return true;
 
             case R.id.drawer_programming:
-                Callscreen.renderURL(this, "http://estudiosmax.com/app/estudiosmax/programacion", "Programacion");  //TODO Cambiar URL por la programacion de la radio y l titulo
+                Callscreen.goScheduleActivity(this);
                 return true;
 
             case R.id.drawer_about_us:
-                Callscreen.renderURL(this,"http://estudiosmax.com/app/estudiosmax/quienessomos", "Quienes Somos?"); //TODO Cambiar URL por la info de la radio y el titulo
+                Intent i = new Intent(this, QuienesSomosActivity.class);
+                this.startActivity(i);
                 return true;
 
             case R.id.drawer_exit:
@@ -261,7 +251,9 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
 
     @Override
     public void onRadioConnected() {
-        findViewById(R.id.btn_play).performClick();
+        findViewById(R.id.btn_pause).performClick();
+        RadioManager.getService().play(Config.RADIO_STREAM_URL);
+       // findViewById(R.id.btn_play).performClick();
     }
 
     @Override
@@ -297,13 +289,12 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
     @Override
     protected void onResume() {
         super.onResume();
-
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-       // radioManager.enableNotification(true);
+        //radioManager.enableNotification(true);
     }
 
 

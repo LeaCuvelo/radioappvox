@@ -194,7 +194,6 @@ public class RadioPlayerService extends Service implements PlayerCallback {
          */
         if (action.equals(NOTIFICATION_INTENT_CANCEL)) {
 
-
             if (isPlaying()) {
                 isClosedFromNotification = true;
                 stop();
@@ -591,6 +590,15 @@ public class RadioPlayerService extends Service implements PlayerCallback {
             buildNotification();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        mNotificationManager.cancelAll();
+        mLock = true;
+        getPlayer().stop();
+    }
+
     public void enableNotification(boolean isEnabled) {
         isNotificationEnabled = isEnabled;
     }
@@ -620,7 +628,7 @@ public class RadioPlayerService extends Service implements PlayerCallback {
         mNotificationManager.cancelAll();
         if (!mLock ) {
             log("Stop requested.");
-            mLock = true;
+            //mLock = true;
             getPlayer().stop();
         }
         isNotificationEnabled = false;

@@ -50,7 +50,6 @@ public class ActivityAbout extends AppCompatActivity {
         if (actionBar != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle(R.string.drawer_about);
         }
 
         loadAdMobBannerAd();
