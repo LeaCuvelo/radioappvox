@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.solodroid.yourradioappsinglestation.activities.ContactUsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- AUSPICIANTES no lo quieren, descomentar para activar
+    <ScrollView
+
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/scrollViewSponsorsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="25dp"
+                android:background="#000000"/>
+
+            <ImageView
+                android:id="@+id/sponsor1"
+                android:src="@drawable/ad1"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/sponsor2"
+                android:src="@drawable/ad2"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/sponsor1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/sponsor3"
+                android:src="@drawable/ad3"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/sponsor2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/sponsor4"
+                android:src="@drawable/ad4"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/sponsor3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/sponsor5"
+                android:src="@drawable/ad5"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/sponsor4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/sponsor6"
+                android:src="@drawable/ad6"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/sponsor5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/sponsor7"
+                android:src="@drawable/ad7"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/sponsor6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_below="@+id/sponsor7"
+                android:id="@+id/info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/contact_us_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/contact_us_phone_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:gravity="center"
+                    android:text="@string/contact_us_mail_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/contact_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACTO"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    -->
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/contact_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/contact_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="CONTACTO"/>
+
+        <View
+            android:id="@+id/separator_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="25dp"
+            android:background="#000000"/>
+
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_phone_contact_value"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/whatsapp_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_whatsapp_value"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/mail_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_mail_contact"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/send_message_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_send_message_label"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_name_label"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="#000000"
+                android:layout_marginRight="30dp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/email_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_email_label"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#000000"
+                android:singleLine="true"
+                android:maxLines="1"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/message_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us_send_message_text"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/message_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/message_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#000000"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/send_message_button"
+            android:layout_width="150dp"
+            android:textAllCaps="false"
+            android:text="@string/contact_us_send_text_button"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

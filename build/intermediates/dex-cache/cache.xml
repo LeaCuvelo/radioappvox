@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_569e7a5ed30d7a6ad0c2837dbf7503a4aa1bb4cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\vox_radio_app\android_team_radioapp\library\build\intermediates\bundles\default\libs\mail-1.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="64b3f6593c8ffbefe3e730366102fd443a92e939">
+        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\8\mail-1.4.1_f832aaeb375d8fcb32183f3116a87b7c8daf1133\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\vox_radio_app\android_team_radioapp\library\build\intermediates\bundles\default\libs\activation-1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1ebf42668cc4e2a6bac95d1185d6cd5a0c9f4eaf">
+        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\8\activation-1.1.1_9b047945006fdfeaae57f6dbb99a7a54fa14ecb2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\vox_radio_app\android_team_radioapp\library\build\intermediates\bundles\default\libs\aacdecoder-android-0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="62e05ac791b1f49b2681d1fb623a33c1eee6498e">
+        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\8\aacdecoder-android-0.8_13d581c556d24ace2b6369f204c8a28ed89a233a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1df037d5e9bffa21a27a563890b87f42845ab8ce">
+        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1796d83970ced6d10c1c508fbfac41d60f0c41d9\classes.dex" />
+    </item>
+
+</items>
