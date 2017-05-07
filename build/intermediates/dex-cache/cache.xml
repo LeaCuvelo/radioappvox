@@ -2,49 +2,67 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lea/Lea/Android/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_569e7a5ed30d7a6ad0c2837dbf7503a4aa1bb4cf\classes.dex" />
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-beta4_885ad7aa29eb76a9c2d8ad89672569452b981e84.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\vox_radio_app\android_team_radioapp\library\build\intermediates\bundles\default\libs\mail-1.4.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lea/AndroidStudioProjects/vox_radio/library/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="84eb2103663fd4a192c5e71319ffddb583a97d5e">
+        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/classes_2a2100ae0e253ec1c44ef876a4b2075598b45a47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lea/AndroidStudioProjects/vox_radio/library/build/intermediates/bundles/default/libs/mail-1.4.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="64b3f6593c8ffbefe3e730366102fd443a92e939">
-        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\8\mail-1.4.1_f832aaeb375d8fcb32183f3116a87b7c8daf1133\classes.dex" />
+        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/mail-1.4.1_7efbb047ed2b8d573f633dc2784f2525eeeccec0.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\vox_radio_app\android_team_radioapp\library\build\intermediates\bundles\default\libs\activation-1.1.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lea/AndroidStudioProjects/vox_radio/library/build/intermediates/bundles/default/libs/activation-1.1.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="1ebf42668cc4e2a6bac95d1185d6cd5a0c9f4eaf">
-        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\8\activation-1.1.1_9b047945006fdfeaae57f6dbb99a7a54fa14ecb2\classes.dex" />
+        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/activation-1.1.1_2fe5fdab1505823a42350cd9646d925cd4c7dd86.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\vox_radio_app\android_team_radioapp\library\build\intermediates\bundles\default\libs\aacdecoder-android-0.8.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lea/AndroidStudioProjects/vox_radio/library/build/intermediates/bundles/default/libs/aacdecoder-android-0.8.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="62e05ac791b1f49b2681d1fb623a33c1eee6498e">
-        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\8\aacdecoder-android-0.8_13d581c556d24ace2b6369f204c8a28ed89a233a\classes.dex" />
+        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/aacdecoder-android-0.8_ee8a6e5b610fb048a759f191d3a3607c186b4f2a.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/lea/.android/build-cache/321883ed2259074f8e5d7d609e4350936e189237/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="1df037d5e9bffa21a27a563890b87f42845ab8ce">
-        <dex dex="C:\vox_radio_app\android_team_radioapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1796d83970ced6d10c1c508fbfac41d60f0c41d9\classes.dex" />
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/classes_6be13b85a9cff3ad47e76b1606454d430e829a15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lea/.android/build-cache/c7742338998719e086b3406406a493fca5a51097/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25bd63c963211aab54ec371c81d15294e9288b55">
+        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/classes_e248c67b07475121e0ddff93b5a0ab885acce1d1.jar" />
     </item>
 
 </items>
