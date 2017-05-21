@@ -3,15 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="/home/lea/Lea/Android/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-beta4/constraint-layout-solver-1.0.0-beta4.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="0a9cb567dc008f570c28531720168f19148da965">
-        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.0-beta4_885ad7aa29eb76a9c2d8ad89672569452b981e84.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/lea/AndroidStudioProjects/vox_radio/library/build/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -45,24 +36,6 @@
         revision="25.0.1"
         sha1="62e05ac791b1f49b2681d1fb623a33c1eee6498e">
         <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/aacdecoder-android-0.8_ee8a6e5b610fb048a759f191d3a3607c186b4f2a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lea/.android/build-cache/321883ed2259074f8e5d7d609e4350936e189237/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
-        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/classes_6be13b85a9cff3ad47e76b1606454d430e829a15.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/lea/.android/build-cache/c7742338998719e086b3406406a493fca5a51097/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="25bd63c963211aab54ec371c81d15294e9288b55">
-        <dex dex="/home/lea/AndroidStudioProjects/vox_radio/app/build/intermediates/pre-dexed/debug/classes_e248c67b07475121e0ddff93b5a0ab885acce1d1.jar" />
     </item>
 
 </items>
