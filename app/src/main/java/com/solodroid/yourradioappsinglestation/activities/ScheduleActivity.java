@@ -72,7 +72,6 @@ public class ScheduleActivity extends AppCompatActivity {
      *  Aca se va a cargar la lista de programas con horario, título y día
      */
     private void setupLists() {
-        //TODO borrar los programas hardcodeados de abajo
 
         weekProgramList = new  ArrayList<>();
 

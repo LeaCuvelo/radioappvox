@@ -2,7 +2,6 @@ package com.solodroid.yourradioappsinglestation.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.icu.util.Calendar;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,15 +19,16 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.firebase.analytics.FirebaseAnalytics;
+
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.solodroid.yourradioappsinglestation.Config;
 import com.solodroid.yourradioappsinglestation.R;
 import com.solodroid.yourradioappsinglestation.fragments.FragmentHome;
-import com.solodroid.yourradioappsinglestation.notification.NotificationHandler;
 import com.solodroid.yourradioappsinglestation.services.NotificationBuilder;
 import com.solodroid.yourradioappsinglestation.utilities.Callscreen;
 
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
         setContentView(R.layout.activity_main);
 
         loadAdMobBannerAd();
-        fireBaseAnalytics();
+        //fireBaseAnalytics();
 
         radioManager = RadioManager.with(MainActivity.this);
 
@@ -93,6 +93,11 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
 
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,
                 new FragmentHome(), COLLAPSING_TOOLBAR_FRAGMENT_TAG).commit();
+
+        //
+
+        subscribeToPushService();
+
 
     }
 
@@ -298,6 +303,20 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
     }
 
 
+    private void subscribeToPushService() {
+      //  FirebaseMessaging.getInstance().subscribeToTopic("news");
+
+        Log.d("AndroidBash", "Subscribed");
+       // Toast.makeText(MainActivity.this, "Subscribed", Toast.LENGTH_SHORT).show();
+
+        String token = FirebaseInstanceId.getInstance().getToken();
+
+        // Log and toast
+        Log.d("AndroidBash", token);
+       // Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
+    }
+
+
 
     private void loadAdMobBannerAd() {
         if (Config.ENABLE_ADMOB_ADS) {
@@ -333,17 +352,7 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
         }
     }
 
-    private void fireBaseAnalytics() {
 
-        Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "main_activity");
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "MainActivity");
-        NotificationHandler.getFirebaseAnalytics().logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
-        NotificationHandler.getFirebaseAnalytics().setAnalyticsCollectionEnabled(true);
-        NotificationHandler.getFirebaseAnalytics().setMinimumSessionDuration(5000);
-        NotificationHandler.getFirebaseAnalytics().setSessionTimeoutDuration(1000000);
-
-    }
 
 
 }

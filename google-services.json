@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "217520701093",
+    "firebase_url": "https://voxradioapp.firebaseio.com",
+    "project_id": "voxradioapp",
+    "storage_bucket": "voxradioapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217520701093:android:1008a370d8f254e9",
+        "android_client_info": {
+          "package_name": "emax.voxradio1029"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217520701093-k77kgul2o1g57kr3cl0bkh3b54c2pbes.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAPjqzTfVC4ZzkIduPVXCOcwY_5mTe3Xc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
