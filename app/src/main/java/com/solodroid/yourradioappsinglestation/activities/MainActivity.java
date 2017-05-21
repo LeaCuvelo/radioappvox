@@ -26,6 +26,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.solodroid.yourradioappsinglestation.Config;
 import com.solodroid.yourradioappsinglestation.R;
 import com.solodroid.yourradioappsinglestation.fragments.FragmentHome;
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
     public boolean onNavigationItemSelected(MenuItem menuItem) {
 
         switch (menuItem.getItemId()) {
-            case R.id.drawer_home:
+           /* case R.id.drawer_home:
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
 
@@ -169,6 +170,30 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
             case R.id.drawer_about_us:
                 Intent i = new Intent(this, QuienesSomosActivity.class);
                 this.startActivity(i);
+                return true;
+*/
+            case R.id.drawer_facebook:
+                Intent socialFb = new Intent(this, ActivitySocial.class);
+                startActivity(socialFb);
+
+                return true;
+            case R.id.drawer_twitter:
+                Intent socialTw = new Intent(this, ActivitySocial.class);
+                startActivity(socialTw);
+
+                return true;
+            case R.id.drawer_instagram:
+                Intent socialIngm = new Intent(this, ActivitySocial.class);
+                startActivity(socialIngm);
+                return true;
+
+            case R.id.drawer_rate:
+                final String appName = getPackageName();
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appName)));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + appName)));
+                }
                 return true;
 
             case R.id.drawer_exit:
@@ -304,7 +329,7 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
 
 
     private void subscribeToPushService() {
-      //  FirebaseMessaging.getInstance().subscribeToTopic("news");
+       FirebaseMessaging.getInstance().subscribeToTopic("Test");
 
         Log.d("AndroidBash", "Subscribed");
        // Toast.makeText(MainActivity.this, "Subscribed", Toast.LENGTH_SHORT).show();

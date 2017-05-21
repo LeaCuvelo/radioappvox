@@ -11,6 +11,9 @@
     <string name="drawer_programming">Programación</string>
     <string name="drawer_about_us">Quienes Somos?</string>
     <string name="drawer_exit">Salir!</string>
+    <string name="drawer_facebook">Facebook</string>
+    <string name="drawer_twitter">Twitter</string>
+    <string name="drawer_instagram">Instagram</string>
     <string name="drawer_empty_title"></string>
 
     <!--about information-->
@@ -37,6 +40,7 @@
     <string name="social_tab2">Twitter</string>
     <string name="facebook_url">http://estudiosmax.com/app/radiovoxfm/facebook</string>
     <string name="twitter_url">http://estudiosmax.com/app/radiovoxfm/twitter</string>
+    <string name="instagram_url">https://www.instagram.com/radiovoxfm/</string>
 
     <!-- play store application link i.e more apps -->
     <string name="play_more_apps">http://estudiosmax.com/app/radiovoxfm/</string>

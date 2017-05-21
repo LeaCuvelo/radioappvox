@@ -20,13 +20,14 @@ import com.google.android.gms.ads.AdView;
 import com.solodroid.yourradioappsinglestation.Config;
 import com.solodroid.yourradioappsinglestation.R;
 import com.solodroid.yourradioappsinglestation.fragments.FragmentFacebook;
+import com.solodroid.yourradioappsinglestation.fragments.FragmentInstagram;
 import com.solodroid.yourradioappsinglestation.fragments.FragmentTwitter;
 
 public class ActivitySocial extends AppCompatActivity {
 
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
-    public static int int_items = 2 ;
+    public static int int_items = 3 ;
     private AdView adView;
 
     @Override
@@ -72,6 +73,7 @@ public class ActivitySocial extends AppCompatActivity {
             switch (position){
                 case 0 : return new FragmentFacebook();
                 case 1 : return new FragmentTwitter();
+                case 2: return new FragmentInstagram();
             }
             return null;
         }
@@ -91,6 +93,8 @@ public class ActivitySocial extends AppCompatActivity {
                     return getResources().getString(R.string.social_tab1);
                 case 1 :
                     return getResources().getString(R.string.social_tab2);
+                case 2 :
+                    return getResources().getString(R.string.drawer_instagram);
             }
             return null;
         }
