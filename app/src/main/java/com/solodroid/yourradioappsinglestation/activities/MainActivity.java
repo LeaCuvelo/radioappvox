@@ -330,15 +330,6 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
 
     private void subscribeToPushService() {
        FirebaseMessaging.getInstance().subscribeToTopic("Test");
-
-        Log.d("AndroidBash", "Subscribed");
-       // Toast.makeText(MainActivity.this, "Subscribed", Toast.LENGTH_SHORT).show();
-
-        String token = FirebaseInstanceId.getInstance().getToken();
-
-        // Log and toast
-        Log.d("AndroidBash", token);
-       // Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
     }
 
 
