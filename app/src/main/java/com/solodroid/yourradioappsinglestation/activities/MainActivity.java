@@ -173,18 +173,15 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
                 return true;
 */
             case R.id.drawer_facebook:
-                Intent socialFb = new Intent(this, ActivitySocial.class);
-                startActivity(socialFb);
+                Callscreen.renderURL(this, getString(R.string.facebook_url), getString(R.string.drawer_facebook));
 
                 return true;
             case R.id.drawer_twitter:
-                Intent socialTw = new Intent(this, ActivitySocial.class);
-                startActivity(socialTw);
+                Callscreen.renderURL(this, getString(R.string.twitter_url), getString(R.string.drawer_twitter));
 
                 return true;
             case R.id.drawer_instagram:
-                Intent socialIngm = new Intent(this, ActivitySocial.class);
-                startActivity(socialIngm);
+                Callscreen.renderURL(this, getString(R.string.instagram_url), getString(R.string.drawer_instagram));
                 return true;
 
             case R.id.drawer_rate:
