@@ -2,24 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\radioappvox\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="C:\radioappvox\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7a4a0a44f722cf6fcfe80e919c5b127071864ba7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\radioappvox\library\build\intermediates\bundles\default\libs\mail-1.4.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="64b3f6593c8ffbefe3e730366102fd443a92e939">
-        <dex dex="C:\radioappvox\app\build\intermediates\transforms\dex\debug\folders\1000\8\mail-1.4.1_431bb584a301c432812c0bb1d55c329deb7368bb\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\radioappvox\library\build\intermediates\bundles\default\libs\mail-1.4.1.jar"
         jumboMode="false"
@@ -83,15 +65,6 @@
         <dex dex="C:\radioappvox\app\build\intermediates\pre-dexed\debug\classes_406f652cd06554858653d7d0fc4bdebea0d09fec.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\radioappvox\library\build\intermediates\bundles\default\libs\activation-1.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1ebf42668cc4e2a6bac95d1185d6cd5a0c9f4eaf">
-        <dex dex="C:\radioappvox\app\build\intermediates\transforms\dex\debug\folders\1000\8\activation-1.1.1_50cd0de1aa2ef923c22a362c55fc4d804b976331\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\radioappvox\library\build\intermediates\bundles\default\libs\aacdecoder-android-0.8.jar"
         jumboMode="false"
@@ -117,24 +90,6 @@
         revision="25.0.1"
         sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
         <dex dex="C:\radioappvox\app\build\intermediates\pre-dexed\debug\classes_f31920fd23dafe0547abb1a924162c6e22f4af50.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\radioappvox\library\build\intermediates\bundles\default\libs\aacdecoder-android-0.8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="62e05ac791b1f49b2681d1fb623a33c1eee6498e">
-        <dex dex="C:\radioappvox\app\build\intermediates\transforms\dex\debug\folders\1000\8\aacdecoder-android-0.8_96bdbdddf38301470aafb4970991c5bf58316d90\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\radioappvox\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ed12e1297c4404dcf23cab7ebfe4a8081c314a6f">
-        <dex dex="C:\radioappvox\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_5e8f96a1b6ebb9ecb97e67266f57ca9391312356\classes.dex" />
     </item>
     <item
         is-multidex="false"
