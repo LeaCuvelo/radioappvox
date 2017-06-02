@@ -72,30 +72,28 @@ public class BaseWebviewActivity extends AppCompatActivity {
             url = extras.getString(URL_TO_RENDER_TAG);
             title = extras.getString(TITLE);
         }
-
-
     }
 
-    private void loadWebView() {
-        setTitle(title);
-        web.getSettings().setLoadWithOverviewMode(true);
-        //web.getSettings().setUseWideViewPort(true);
-      //  web.getSettings().setBuiltInZoomControls(true);
-       //web.getSettings().setPluginState(WebSettings.PluginState.ON);
-        web.getSettings().setJavaScriptEnabled(true);
-        web.getSettings().setJavaScriptCanOpenWindowsAutomatically(false);
-       // web.getSettings().setSupportMultipleWindows(false);
-       // web.getSettings().setSupportZoom(true);
-      //  web.setVerticalScrollBarEnabled(true);
-        web.setHorizontalScrollBarEnabled(true);
+        private void loadWebView() {
+            setTitle(title);
+            web.getSettings().setLoadWithOverviewMode(true);
+            //web.getSettings().setUseWideViewPort(true);
+          //  web.getSettings().setBuiltInZoomControls(true);
+           //web.getSettings().setPluginState(WebSettings.PluginState.ON);
+            web.getSettings().setJavaScriptEnabled(true);
+            web.getSettings().setJavaScriptCanOpenWindowsAutomatically(false);
+           // web.getSettings().setSupportMultipleWindows(false);
+           // web.getSettings().setSupportZoom(true);
+          //  web.setVerticalScrollBarEnabled(true);
+            web.setHorizontalScrollBarEnabled(true);
 
-        getWindow().setFlags(
-                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
-                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
+            getWindow().setFlags(
+                    WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
+                    WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
 
-        web.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+            web.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
-        web.loadUrl(url);
-    }
+            web.loadUrl(url);
+        }
 
 }
