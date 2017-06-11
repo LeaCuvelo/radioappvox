@@ -326,7 +326,7 @@ public class MainActivity extends AppCompatActivity implements RadioListener, Na
 
 
     private void subscribeToPushService() {
-       FirebaseMessaging.getInstance().subscribeToTopic("Test");
+           FirebaseMessaging.getInstance().subscribeToTopic("radioVoxNotification");
     }
 
 
