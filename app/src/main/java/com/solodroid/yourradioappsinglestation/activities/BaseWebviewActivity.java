@@ -74,7 +74,7 @@ public class BaseWebviewActivity extends AppCompatActivity {
         }
     }
 
-        private void loadWebView() {
+    private void loadWebView() {
             setTitle(title);
             web.getSettings().setLoadWithOverviewMode(true);
             //web.getSettings().setUseWideViewPort(true);
@@ -87,6 +87,7 @@ public class BaseWebviewActivity extends AppCompatActivity {
           //  web.setVerticalScrollBarEnabled(true);
             web.setHorizontalScrollBarEnabled(true);
 
+
             getWindow().setFlags(
                     WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
                     WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
@@ -96,4 +97,14 @@ public class BaseWebviewActivity extends AppCompatActivity {
             web.loadUrl(url);
         }
 
+        /* Cambio para clear cache */
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        if(web != null){
+            web.clearCache(true);
+        }
+
+    }
 }
