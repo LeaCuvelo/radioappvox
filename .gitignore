@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/radioappvox/.idea
+/radioappvox/build/*
+/radioappvox/build
+/radioappvox/gradle
+/radioappvox/gradlew.bat
+/radioappvox/.gradle
