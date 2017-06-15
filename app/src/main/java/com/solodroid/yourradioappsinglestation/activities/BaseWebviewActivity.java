@@ -72,30 +72,39 @@ public class BaseWebviewActivity extends AppCompatActivity {
             url = extras.getString(URL_TO_RENDER_TAG);
             title = extras.getString(TITLE);
         }
-
-
     }
 
     private void loadWebView() {
-        setTitle(title);
-        web.getSettings().setLoadWithOverviewMode(true);
-        //web.getSettings().setUseWideViewPort(true);
-      //  web.getSettings().setBuiltInZoomControls(true);
-       //web.getSettings().setPluginState(WebSettings.PluginState.ON);
-        web.getSettings().setJavaScriptEnabled(true);
-        web.getSettings().setJavaScriptCanOpenWindowsAutomatically(false);
-       // web.getSettings().setSupportMultipleWindows(false);
-       // web.getSettings().setSupportZoom(true);
-      //  web.setVerticalScrollBarEnabled(true);
-        web.setHorizontalScrollBarEnabled(true);
+            setTitle(title);
+            web.getSettings().setLoadWithOverviewMode(true);
+            //web.getSettings().setUseWideViewPort(true);
+          //  web.getSettings().setBuiltInZoomControls(true);
+           //web.getSettings().setPluginState(WebSettings.PluginState.ON);
+            web.getSettings().setJavaScriptEnabled(true);
+            web.getSettings().setJavaScriptCanOpenWindowsAutomatically(false);
+           // web.getSettings().setSupportMultipleWindows(false);
+           // web.getSettings().setSupportZoom(true);
+          //  web.setVerticalScrollBarEnabled(true);
+            web.setHorizontalScrollBarEnabled(true);
 
-        getWindow().setFlags(
-                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
-                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
 
-        web.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+            getWindow().setFlags(
+                    WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
+                    WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
 
-        web.loadUrl(url);
+            web.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+
+            web.loadUrl(url);
+        }
+
+        /* Cambio para clear cache */
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        if(web != null){
+            web.clearCache(true);
+        }
+
     }
-
 }
